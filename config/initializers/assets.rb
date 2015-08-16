@@ -6,11 +6,3 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
-require 'paperclip/media_type_spoof_detector'
-module Paperclip
-  class MediaTypeSpoofDetector
-    def spoofed?
-      false
-    end
-  end
-end
